@@ -1,0 +1,210 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Zahid Safi} \\ \vspace{1pt}
+    \small 801-635-0123 $|$ \href{mailto:zahidsafi956@gmail.com}{{zahidsafi956@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/zahidsafi}{{https://www.linkedin.com/in/zahidsafi}} $|$
+    \href{https://github.com/ZahidSafi}{{https://github.com/ZahidSafi}} $|$
+    \href{https://zahid-safi.netlify.app/}{https://zahid-safi.netlify.app/}
+    %---- \href{https://github.com/...}{\underline{github.com/jake}}
+\end{center}
+
+
+%-----------EXPERIENCE-----------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Developer, Backend}{May 2021 -- March 2023}
+{BambooHR}{Lindon, Utah}
+\resumeItemListStart
+\resumeItem{Collaborated with team using PHP and MySQL to deliver culture solutions and insights for BambooHR customers by creating a fully functional solutions.}
+\resumeItem{Co-led the development of an intuitive survey feature that streamlined data collection and analysis for executives resulting in an increase in employee well-being tracking efficiency and improvement in response rates.}
+\resumeItem{Pioneered a dynamic training widget to provide real-time updates on completed, pending, and overdue training tasks to increase training completion rates.}
+\resumeItem{Faced with slow database performance for organizations with over 1,000 employees, optimized MySQL queries to reduce loading times by 40\% and improve UX.}
+
+\resumeItemListEnd
+
+\resumeSubheading
+{Identity and Access Management Intern}{Feb 2020 -- May 2021}
+{University of Utah}{Salt Lake City, Utah}
+\resumeItemListStart
+\resumeItem{Partnered to modernize the University's login page using Apereo CAS, Git, Tomcat, HTML, and Linux.}
+\resumeItem{Tailored a Spring Boot app for streamlined user attribute management utilizing Apereo CAS, Git, and Linux.}
+\resumeItem{Efficiently administered CAS JSON files leveraging Java, Git, and Linux for seamless updates and organization.}
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Microsoft Support}{Jan 2018 -- Feb 2020}
+{Education At Work}{Salt Lake City, Utah}
+\resumeItemListStart
+\resumeItem{Boosted customer satisfaction and five-star ratings by effectively resolving Office Suite technical issues.}
+\resumeItem{Outperformed competing support sites with exceptional service, increasing customer retention and positive feedback.}
+\resumeItem{Improved customer support with colleagues using OneNote and articles, reducing response time and enhancing first-contact resolution.}
+\resumeItemListEnd
+\resumeItemListEnd
+
+\section{\textbf{Technical Skills}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+                    \textbf{Languages}{: PHP(Adv), C\#(Adv), Java(Int), C/C++ (Beg), Python(Int), MySQL(Int),  JavaScript/HTML/CSS(Int)} \\
+                    \textbf{Frameworks/Libraries}{:.NET Core(Adv), ASP.NET Core(Adv), React.js(Int), FastAPI(Beg)} \\
+                    \textbf{Developer Tools}{: GitHub (Int), Azure(Beg), Postman(Int), AWS(Beg)} \\
+              }}
+\end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{\textbf{Projects}}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{FFMPEG: Innovative Audio Codec} }{}
+\resumeItemListStart
+\resumeItem{Engineered an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{U-Dash: Remote Campus Delivery Vehicle} }{}
+\resumeItemListStart
+\resumeItem{Conceptualized and built a campus vehicle using Raspberry Pi, Python, and C for remote deliveries}
+\resumeItem{Devised and deployed a user-centric web application with FastAPI and React for an enhanced UX}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Research Opportunity Web Platform} }{}
+\resumeItemListStart
+\resumeItem{Crafted an MVC ASP.NET Core web app using HTML/CSS/JS, offering a seamless user experience}
+\resumeItem{Employed Amazon Web Services for scalable deployment of the web application, reaching a broader audience}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Comprehensive Learning Management System} }{}
+\resumeItemListStart
+\resumeItem{Created an ASP.NET Core web application to access/present data from an MySQL database on a web server}
+\resumeItem{Structured the MySQL database to encompass students, classes, departments, and more}
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{\textbf{Education}}
+\resumeSubHeadingListStart
+\resumeSubheading
+{\textbf{University Of Utah} - 3.7 GPA}{Salt Lake City, Utah}
+{Bachelor of Science in Computer Engineering}{Dec 2022}
+\resumeItem {\emph{Deans List, Fall 2017 - Spring 2020}}
+
+%  \begin{itemize}[leftmargin=0.01in, label={}]
+% \small{\item{
+%  \textbf{Relevant Courses}{: Object-Oriented Programming, Data Structures \& Algorithm, Web Software Architecture, Computer Systems, Software Practice I \& II, Database Systems, Computer Network, Embedded Systems} \\
+% }}
+
+\end{itemize}
+
+%-------------------------------------------
+\end{document}
