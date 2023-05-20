@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,1pt]{article}
+\documentclass[letterpaper,11pt]{article}
 
 
 \usepackage{latexsym}
@@ -16,19 +16,20 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
+\usepackage{tabu}
 \input{glyphtounicode}
 
 
-
+\renewcommand{\labelitemi}{$\bullet$}
 
 
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-.75in}
-\addtolength{\evensidemargin}{-.75in}
-\addtolength{\textwidth}{1.5in}
-\addtolength{\topmargin}{-.75in}
-\addtolength{\textheight}{1.5in}
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
 
@@ -51,11 +52,11 @@
 
 
 \begin{center}
-  \textbf{\Huge Zahid Safi} \\ \vspace{1pt}
-  \small 801-635-0123 $|$ \href{mailto:zahidsafi956@gmail.com}{{zahidsafi956@gmail.com}} $|$
-  \href{https://www.linkedin.com/in/zahidsafi}{{https://www.linkedin.com/in/zahidsafi}} $|$
-  \href{https://github.com/ZahidSafi}{{https://github.com/ZahidSafi}} $|$
-  \href{https://zahid-safi.netlify.app/}{https://zahid-safi.netlify.app/}
+	\textbf{\Huge Zahid Safi} \\ \vspace{1pt}
+	\small 801-635-0123 $|$ \href{mailto:zahidsafi956@gmail.com}{{zahidsafi956@gmail.com}} $|$
+	\href{https://www.linkedin.com/in/zahidsafi}{{https://www.linkedin.com/in/zahidsafi}} $|$
+	\href{https://github.com/ZahidSafi}{{https://github.com/ZahidSafi}} $|$
+	\href{https://zahid-safi.netlify.app/}{https://zahid-safi.netlify.app/}
 \end{center}
 
 
@@ -63,38 +64,42 @@
 
 \section{\textbf{Experience}}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
-  \item{
-              \textbf{Software Developer, Backend} \hfill May 2021 -- March 2023 \\
-              BambooHR \hfill Lindon, Utah \\
-              \begin{itemize}
-                \item{Collaborated with team using PHP and MySQL to deliver culture solutions and insights for BambooHR customers by creating a fully functional solutions.}
-                \item{Co-led the development of an intuitive survey feature that streamlined data collection and analysis for executives resulting in an increase in employee well-being tracking efficiency and improvement in response rates.}
-                \item{Pioneered a dynamic training widget to provide real-time updates on completed, pending, and overdue training tasks to increase training completion rates.}
-                \item{Faced with slow database performance for organizations with over 1,000 employees, optimized MySQL queries to reduce loading times by 40\% and improve UX.}
-              \end{itemize}
-        }
+	\item{
+	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
+		            \textbf{Software Developer, Backend} & \textbf{BambooHR} & \textbf{May 2021 -- March 2023} \\
+	            \end{tabu}
+	            \begin{itemize}[label=$\bullet$]
+		            \item{Collaborated with team using PHP and MySQL to deliver culture solutions and insights for BambooHR customers by creating a fully functional solutions.}
+		            \item{Co-led the development of an intuitive survey feature that streamlined data collection and analysis for executives resulting in an increase in employee well-being tracking efficiency and improvement in response rates.}
+		            \item{Pioneered a dynamic training widget to provide real-time updates on completed, pending, and overdue training tasks to increase training completion rates.}
+		            \item{Faced with slow database performance for organizations with over 1,000 employees, optimized MySQL queries to reduce loading times by 40\% and improve UX.}
+	            \end{itemize}
+	      }
 
-  \item{
-              \textbf{Identity and Access Management Intern} \hfill May 2021 -- March 2023 \\
-              University of Utah \hfill Salt Lake City, Utah \\
-              \begin{itemize}
-                \item{Partnered to modernize the University’s login page using Apereo CAS, Git, Tomcat, HTML, and Linux.}
-                \item{Tailored a Spring Boot app for streamlined user attribute management utilizing Apereo CAS, Git, and Linux.}
-                \item{ Efficiently administered CAS JSON files leveraging Java, Git, and Linux for seamless updates and organization.}
-              \end{itemize}
-        }
+	\item{
+	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
+		            \textbf{IAM Intern} & \textbf{University of Utah} & \textbf{Feb 2020 -- May 2021} \\
+	            \end{tabu}
 
-  \item{
-              \textbf{Microsoft Support} \hfill May 2021 -- March 2023 \\
-              Education At Work \hfill Salt Lake City, Utah \\
-              \begin{itemize}
-                \item{Boosted customer satisfaction and five-star ratings by effectively resolving Office Suite technical issues.}
-                \item{Outperformed competing support sites with exceptional service, increasing customer retention and positive
-                            feedback.}
-                \item{Improved customer support with colleagues using OneNote and articles, reducing response time and enhancing
-                            first-contact resolution.}
-              \end{itemize}
-        }
+	            \begin{itemize}[label=$\bullet$]
+		            \item{Partnered to modernize the University’s login page using Apereo CAS, Git, Tomcat, HTML, and Linux.}
+		            \item{Tailored a Spring Boot app for streamlined user attribute management utilizing Apereo CAS, Git, and Linux.}
+		            \item{ Efficiently administered CAS JSON files leveraging Java, Git, and Linux for seamless updates and organization.}
+	            \end{itemize}
+	      }
+
+	\item{
+	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
+		            \textbf{Microsoft Support} & \textbf{Education At Work} & \textbf{Jan 2018 -- Feb 2020} \\
+	            \end{tabu}
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Boosted customer satisfaction and five-star ratings by effectively resolving Office Suite technical issues.}
+		            \item{Outperformed competing support sites with exceptional service, increasing customer retention and positive
+		                        feedback.}
+		            \item{Improved customer support with colleagues using OneNote and articles, reducing response time and enhancing
+		                        first-contact resolution.}
+	            \end{itemize}
+	      }
 
 \end{itemize}
 
@@ -102,11 +107,11 @@
 
 \section{\textbf{Technical Skills}}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
-  \small{\item{
-                \textbf{Languages}{: PHP, C\#, Java, C, C++, Python, MySQL,  JavaScript, HTML, CSS} \\
-                \textbf{Frameworks/Libraries}{: .NET Core, ASP.NET Core, React.js, FastAPI} \\
-                \textbf{Developer Tools}{: GitHub , Azure, Postman, AWS} \\
-          }}
+	\small{\item{
+		            \textbf{Languages}{: PHP, C\#, Java, C, C++, Python, MySQL,  JavaScript, HTML, CSS} \\
+		            \textbf{Frameworks And Libraries}{: .NET Core, ASP.NET Core, React.js, FastAPI} \\
+		            \textbf{Developer Tools}{: GitHub , Azure, Postman, AWS(EC2), Docker, Linux, Jira, CI\/CD} \\
+		      }}
 \end{itemize}
 
 
@@ -114,34 +119,34 @@
 
 \section{\textbf{Projects}}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
-  \item{
-              \textbf{Sorting Algorithm Visualizer} \hfill May 2021 -- March 2023 \\
-              \begin{itemize}
-                \item{Developed a HTML/CSS/JS and React app to visualize algorithm efficiency, boosting user understanding}
-              \end{itemize}
-        }
-  \item{
-              \textbf{U-Dash: Remote Campus Delivery Vehicle} \hfill May 2021 -- March 2023 \\
-              \begin{itemize}
-                \item{Conceptualized and built a campus vehicle using Raspberry Pi, Python, and C for remote deliveries.}
-                \item{Devised and deployed a user-centric web application with FastAPI and React for an enhanced UX.}
-                \item{Implemented a REST API with FastAPI and Python to facilitate communication between the vehicle and web app.}
-              \end{itemize}
-        }
-  \item{
-              \textbf{Research Opportunity Web Platform} \hfill May 2021 -- March 2023 \\
-              \begin{itemize}
-                \item{Crafted an MVC ASP.NET Core web app using HTML/CSS, C\#, and SQL to connect students with research opportunities.}
-                \item{Designed a user-friendly interface with HTML/CSS and Bootstrap to enhance the user experience.}
-                \item{Implemented a REST API with ASP.NET Core and C\# to facilitate communication between the web app and database.}
-              \end{itemize}
-        }
-  \item{
-              \textbf{FFMPEG: Innovative Audio Codec} \hfill May 2021 -- March 2023 \\
-              \begin{itemize}
-                \item{Engineered an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format.}
-              \end{itemize}
-        }
+	\item{
+	            \textbf{Sorting Algorithm Visualizer}
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Developed a HTML/CSS/JS and React app to visualize algorithm efficiency, boosting user understanding}
+	            \end{itemize}
+	      }
+	\item{
+	            \textbf{U-Dash: Remote Campus Delivery Vehicle}
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Conceptualized and built a campus vehicle using Raspberry Pi, Python, and C for remote deliveries.}
+		            \item{Devised and deployed a user-centric web application with FastAPI and React for an enhanced UX.}
+		            \item{Implemented a REST API with FastAPI and Python to facilitate communication between the vehicle and web app.}
+	            \end{itemize}
+	      }
+	\item{
+	            \textbf{Research Opportunity Web Platform}
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Crafted an MVC ASP.NET Core web app using HTML/CSS, C\#, and SQL to connect students with research opportunities.}
+		            \item{Designed a user-friendly interface with HTML/CSS and Bootstrap to enhance the user experience.}
+		            \item{Implemented a REST API with ASP.NET Core and C\# to facilitate communication between the web app and database.}
+	            \end{itemize}
+	      }
+	\item{
+	            \textbf{FFMPEG: Innovative Audio Codec}
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Engineered an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format.}
+	            \end{itemize}
+	      }
 
 \end{itemize}
 
@@ -151,17 +156,16 @@
 
 \section{\textbf{Education}}
 \begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
-  \item{
-              \textbf{University of Utah - 3.7 GPA} \hfill Salt Lake City, Utah \\
-              Bachelor of Science in Computer Engineering \hfill Dec 2022 \\
-              Deans List, Fall 2017 - Spring 2020
-              \begin{itemize}[leftmargin=0.01in, label={}]
-                \small{\item{
-                              \textbf{Relevant Courses}{: Object-Oriented Programming, Data Structures \& Algorithm, Web Software Architecture, Computer Systems, Software Practice I \& II, Database Systems, Computer Network, Embedded Systems} \\
-                        }}
+	\item{
+	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
+		            \textbf{Salt Lake City, Utah} & \textbf{University of Utah} & \textbf{Aug 2017 -- Dec 2022} \\
+	            \end{tabu}
 
-              \end{itemize}
-        }
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Bachelor of Science in Computer Engineering}
+		            \item{Relevant Courses{: Object-Oriented Programming, Data Structures \& Algorithm, Web Software Architecture, Computer Systems, Software Practice I \& II, Database Systems, Computer Network} }
+	            \end{itemize}
+	      }
 \end{itemize}
 
 
