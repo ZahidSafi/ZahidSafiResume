@@ -5,11 +5,14 @@
 % License : MIT
 %------------------------
 
+\ProcessOptions\relax
+
 \documentclass[letterpaper,11pt]{article}
 
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
+\usepackage{newtxtext,newtxmath}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -17,29 +20,86 @@
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tabu}
-\input{glyphtounicode}
+\usepackage[parfill]{parskip}
+\usepackage[left=0.75in,top=0.5in,right=0.75in,bottom=0.5in]{geometry}
+
+% For spcaed small caps
+\usepackage{microtype}
 
 
+ \setlist{noitemsep, topsep=-1\parskip}
 \renewcommand{\labelitemi}{$\bullet$}
 
 
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+%--------------------------------------------------------------------------------
+%                                   Constants                                   -
+%--------------------------------------------------------------------------------
 
-\urlstyle{same}
 
-\raggedbottom
-\raggedright
+  \def\namespaceskip{0.575em}
+  \def\afterheaderspace{1.1pt}
+ 
+
+  %--------------------------------------------------------------------------------
+%                            Header Setup and Printing                          -
+%--------------------------------------------------------------------------------
+
+% Address
+\makeatletter
+
+\newcommand\address[1]{\def\@address{#1}}
+\address{}
+
+\newcommand\printaddress{
+  \small{\@address}
+}
+
+\makeatother
+
+% Name
+\makeatletter
+
+\newcommand\name[1]{\def\@name{#1}}
+\name{}
+
+\newcommand\printname{
+  \typeout {kokoko}
+  \typeout \spaceskip
+  \spaceskip \namespaceskip \relax
+  \textbf{\LARGE\textls[150]{\textsc{\@name}}}
+}
+
+\makeatother
+
+% Contacts
+\makeatletter
+
+\newcommand\contacts[1]{\def\@contacts{#1}}
+\contacts{}
+
+\newcommand\printcontacts{
+  \small{\@contacts}
+}
+
+\makeatother
+
+\makeatletter
+\newcommand\makeheader{
+  \begin{center}
+    \begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
+      \printaddress & \printname & \printcontacts \\
+    \end{tabu}
+  \end{center}
+  \vspace*{\afterheaderspace}
+}
+\makeatother
+
 
 % Sections formatting
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -47,32 +107,28 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Set applicant's personal data for header
+\name{Zahid Safi }
+\address{zahidsafi956@gmail.com \linebreak 801-635-0123}
+\contacts{ https://github.com/ZahidSafi \linebreak https://www.linkedin.com/in/zahidsafi}
 
 \begin{document}
 
-
-\begin{center}
-	\textbf{\Huge Zahid Safi} \\ \vspace{1pt}
-	\small 801-635-0123 $|$ \href{mailto:zahidsafi956@gmail.com}{{zahidsafi956@gmail.com}} $|$
-	\href{https://www.linkedin.com/in/zahidsafi}{{https://www.linkedin.com/in/zahidsafi}} $|$
-	\href{https://github.com/ZahidSafi}{{https://github.com/ZahidSafi}} $|$
-	\href{https://zahid-safi.netlify.app/}{https://zahid-safi.netlify.app/}
-\end{center}
-
+\makeheader
 
 %-----------EXPERIENCE-----------
 
 \section{\textbf{Experience}}
-\begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
+\begin{itemize}[leftmargin=0.05in, label={}]
 	\item{
-	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
-		            \textbf{Software Developer, Backend} & \textbf{BambooHR} & \textbf{May 2021 -- March 2023} \\
+	            \begin{tabu} {X[l] X[c] X[r]}
+		            \textbf{Software Developer, Backend} & \textbf{BambooHR} & \textbf{May 2021 -- Mar 2023} \\
 	            \end{tabu}
 	            \begin{itemize}[label=$\bullet$]
-		            \item{Collaborated with team using PHP and MySQL to deliver culture solutions and insights for BambooHR customers by creating a fully functional solutions.}
-		            \item{Co-led the development of an intuitive survey feature that streamlined data collection and analysis for executives resulting in an increase in employee well-being tracking efficiency and improvement in response rates.}
-		            \item{Pioneered a dynamic training widget to provide real-time updates on completed, pending, and overdue training tasks to increase training completion rates.}
-		            \item{Faced with slow database performance for organizations with over 1,000 employees, optimized MySQL queries to reduce loading times by 40\% and improve UX.}
+		            \item{Collaborated with scrum teams to deliver functional culture/insights solutions, to contribute to HR processes for over 20,000 customers.}
+		            \item{Collaborated on an employee wellbeing survey feature that collected data and analytics for executives, providing valuable insights for decision-making.}
+		            \item{Developed a dynamic training widget to provide updates on completed, incomplete, and overdue training tasks to increase training completion rates.}
+		            \item{Optimized MySQL queries to enhance database performance for organizations with over 1,000 employees, reducing loading times by 40\% and improving user experience.}
 	            \end{itemize}
 	      }
 
@@ -82,22 +138,19 @@
 	            \end{tabu}
 
 	            \begin{itemize}[label=$\bullet$]
-		            \item{Partnered to modernize the University’s login page using Apereo CAS, Git, Tomcat, HTML, and Linux.}
 		            \item{Tailored a Spring Boot app for streamlined user attribute management utilizing Apereo CAS, Git, and Linux.}
 		            \item{ Efficiently administered CAS JSON files leveraging Java, Git, and Linux for seamless updates and organization.}
 	            \end{itemize}
 	      }
 
 	\item{
-	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
+	            \begin{tabu} {X[l] X[c] X[r]}
 		            \textbf{Microsoft Support} & \textbf{Education At Work} & \textbf{Jan 2018 -- Feb 2020} \\
 	            \end{tabu}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Boosted customer satisfaction and five-star ratings by effectively resolving Office Suite technical issues.}
-		            \item{Outperformed competing support sites with exceptional service, increasing customer retention and positive
-		                        feedback.}
-		            \item{Improved customer support with colleagues using OneNote and articles, reducing response time and enhancing
-		                        first-contact resolution.}
+		            \item{Resolved Office Suite technical issues, providing exceptional customer support that boosted customer satisfaction and resulted in positive feedback and high ratings.}
+\item{Outperformed competing support sites by delivering efficient and effective solutions, enhancing customer retention and loyalty to the organization.}
+\item{Collaborated with colleagues using OneNote and articles, reducing response time and enhancing first-contact resolution, contributing to a seamless customer support experience.}
 	            \end{itemize}
 	      }
 
@@ -106,11 +159,11 @@
 %-----------TECHNICAL SKILLS-----------
 
 \section{\textbf{Technical Skills}}
-\begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
-	\small{\item{
+\begin{itemize}[leftmargin=0.05in, label={}]
+	{\item{
 		            \textbf{Languages}{: PHP, C\#, Java, C, C++, Python, MySQL,  JavaScript, HTML, CSS} \\
 		            \textbf{Frameworks And Libraries}{: .NET Core, ASP.NET Core, React.js, FastAPI} \\
-		            \textbf{Developer Tools}{: GitHub , Azure, Postman, AWS(EC2), Docker, Linux, Jira, CI\/CD} \\
+		            \textbf{Developer Tools}{: Git, GitHub , Azure, Postman, AWS(EC2), Docker, Linux, Jira, CI/CD} \\
 		      }}
 \end{itemize}
 
@@ -118,33 +171,41 @@
 %-----------PROJECTS-----------
 
 \section{\textbf{Projects}}
-\begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
+\begin{itemize}[leftmargin=0.05in, label={}]
+	\item{
+	            \textbf{Personal Porfolio Website}
+	            \begin{itemize} [label=$\bullet$]
+		            \item{Built a React app to showcase my overall work experience, projects, and skills.}
+		            \item {Deployed on Netlify using CI/CD to automate the deployment process and make it publicly accessible.}
+	            \end{itemize}
+	      }
 	\item{
 	            \textbf{Sorting Algorithm Visualizer}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Developed a HTML/CSS/JS and React app to visualize algorithm efficiency, boosting user understanding}
+		            \item{Developed a React app to visualize algorithm efficiency to help understand algorithmic concepts and performance.}
 	            \end{itemize}
 	      }
 	\item{
 	            \textbf{U-Dash: Remote Campus Delivery Vehicle}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Conceptualized and built a campus vehicle using Raspberry Pi, Python, and C for remote deliveries.}
-		            \item{Devised and deployed a user-centric web application with FastAPI and React for an enhanced UX.}
-		            \item{Implemented a REST API with FastAPI and Python to facilitate communication between the vehicle and web app.}
+		            \item{Designed and built a campus vehicle using Raspberry Pi, Python, and C to provide efficient remote deliveries}
+		            \item {Implemented a REST API with FastAPI to establish  communication between the vehicle and web application}
+		                  \item{Built and deployed a ReactJS web application, enabling communication between the user and vehicle.}
+
 	            \end{itemize}
 	      }
 	\item{
 	            \textbf{Research Opportunity Web Platform}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Crafted an MVC ASP.NET Core web app using HTML/CSS, C\#, and SQL to connect students with research opportunities.}
-		            \item{Designed a user-friendly interface with HTML/CSS and Bootstrap to enhance the user experience.}
-		            \item{Implemented a REST API with ASP.NET Core and C\# to facilitate communication between the web app and database.}
+		            \item{Created an MVC web app using HTML5, CSS3, C\#, and MySQL to connect students with research opportunities.}
+		            \item{Designed a user-friendly interface using Bootstrap, optimizing UX and increasing engagement with opportunities.}
+		            \item{Implemented a RESTful API with ASP.NET Core, enabling data transfer between the app and MySQL database.}
 	            \end{itemize}
 	      }
 	\item{
 	            \textbf{FFMPEG: Innovative Audio Codec}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Engineered an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format.}
+		            \item{Developed an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format.}
 	            \end{itemize}
 	      }
 
@@ -155,14 +216,14 @@
 %-----------EDUCATION-----------
 
 \section{\textbf{Education}}
-\begin{itemize}[leftmargin=0.15in, itemsep=0pt, parsep=0pt, label={}]
+\begin{itemize}[leftmargin=0.05in, label={}]
 	\item{
-	            \begin{tabu} to \dimexpr\textwidth-0.15in {X[l] X[c] X[r]}
+	            \begin{tabu} {X[l] X[c] X[r]}
 		            \textbf{Salt Lake City, Utah} & \textbf{University of Utah} & \textbf{Aug 2017 -- Dec 2022} \\
 	            \end{tabu}
 
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Bachelor of Science in Computer Engineering}
+		            \item{Bachelor of Science in Computer Engineering - 3.7 GPA}
 		            \item{Relevant Courses{: Object-Oriented Programming, Data Structures \& Algorithm, Web Software Architecture, Computer Systems, Software Practice I \& II, Database Systems, Computer Network} }
 	            \end{itemize}
 	      }
