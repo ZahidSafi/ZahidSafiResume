@@ -27,7 +27,7 @@
 \usepackage{microtype}
 
 
- \setlist{noitemsep, topsep=-1\parskip}
+\setlist{noitemsep, topsep=-1\parskip}
 \renewcommand{\labelitemi}{$\bullet$}
 
 
@@ -41,61 +41,6 @@
   \def\afterheaderspace{1.1pt}
  
 
-  %--------------------------------------------------------------------------------
-%                            Header Setup and Printing                          -
-%--------------------------------------------------------------------------------
-
-% Address
-\makeatletter
-
-\newcommand\address[1]{\def\@address{#1}}
-\address{}
-
-\newcommand\printaddress{
-  \small{\@address}
-}
-
-\makeatother
-
-% Name
-\makeatletter
-
-\newcommand\name[1]{\def\@name{#1}}
-\name{}
-
-\newcommand\printname{
-  \typeout {kokoko}
-  \typeout \spaceskip
-  \spaceskip \namespaceskip \relax
-  \textbf{\LARGE\textls[150]{\textsc{\@name}}}
-}
-
-\makeatother
-
-% Contacts
-\makeatletter
-
-\newcommand\contacts[1]{\def\@contacts{#1}}
-\contacts{}
-
-\newcommand\printcontacts{
-  \small{\@contacts}
-}
-
-\makeatother
-
-\makeatletter
-\newcommand\makeheader{
-  \begin{center}
-    \begin{tabu} to 1\textwidth { X[l,m] X[2,c,m] X[r,m] }
-      \printaddress & \printname & \printcontacts \\
-    \end{tabu}
-  \end{center}
-  \vspace*{\afterheaderspace}
-}
-\makeatother
-
-
 % Sections formatting
 \titleformat{\section}{
   \vspace{-10pt}\scshape\raggedright\large
@@ -107,14 +52,16 @@
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-% Set applicant's personal data for header
-\name{Zahid Safi }
-\address{zahidsafi956@gmail.com \linebreak 801-635-0123}
-\contacts{ https://github.com/ZahidSafi \linebreak https://www.linkedin.com/in/zahidsafi}
 
 \begin{document}
 
-\makeheader
+\begin{center}
+    \spaceskip \namespaceskip \relax
+  \textbf{\Huge{Zahid Safi}} \\ \vspace{1pt}
+    \small 801-635-0123 $|$ \href{mailto:zahidsafi956@gmail.com}{{zahidsafi956@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/zahidsafi}{{https://www.linkedin.com/in/zahidsafi}} $|$
+    \href{https://github.com/ZahidSafi}{{https://github.com/ZahidSafi}} 
+\end{center}
 
 %-----------EXPERIENCE-----------
 
@@ -122,13 +69,16 @@
 \begin{itemize}[leftmargin=0.05in, label={}]
 	\item{
 	            \begin{tabu} {X[l] X[c] X[r]}
-		            \textbf{Software Developer, Backend} & \textbf{BambooHR} & \textbf{May 2021 -- Mar 2023} \\
+		            \textbf{Backend Software Developer} & \textbf{BambooHR} & \textbf{May 2021 -- Mar 2023} \\
 	            \end{tabu}
 	            \begin{itemize}[label=$\bullet$]
-		            \item{Collaborated with scrum teams to deliver functional culture/insights solutions, to contribute to HR processes for over 20,000 customers.}
-		            \item{Collaborated on an employee wellbeing survey feature that collected data and analytics for executives, providing valuable insights for decision-making.}
-		            \item{Developed a dynamic training widget to provide updates on completed, incomplete, and overdue training tasks to increase training completion rates.}
-		            \item{Optimized MySQL queries to enhance database performance for organizations with over 1,000 employees, reducing loading times by 40\% and improving user experience.}
+		            \item{Operated with scrum teams implementing business logic and specifications from product management and UX to deliver functional culture/insights solutions, to contribute to HR processes for
+					over 20,000 customers.}
+		            \item{Collaborated on an  employee well-being survey feature with UX team, creating a data collection system that analyzed over 500+ responses, provided crucial insights for executive decision-making.}
+		            \item {Employed CI/CD (Continuous Integration and Continuous Development) technology to deliver features to production daily and ensuring code
+					quality by following proper software design.}
+		            \item{Developed a training widget meeting business requirement to provide updates on completed, incomplete, and overdue training increasing completion rates for companies having 100+ training's.}
+		            \item{Optimized SQL queries to enhance database performance for organizations with over 1,000 employees, reducing loading times by 40\% and improving user experience.}
 	            \end{itemize}
 	      }
 
@@ -139,7 +89,7 @@
 
 	            \begin{itemize}[label=$\bullet$]
 		            \item{Tailored a Spring Boot app for streamlined user attribute management utilizing Apereo CAS, Git, and Linux.}
-		            \item{ Efficiently administered CAS JSON files leveraging Java, Git, and Linux for seamless updates and organization.}
+		            \item{Built a JSON file management using Java , Git and Linux to update, create and manage JSON files for CAS.}
 	            \end{itemize}
 	      }
 
@@ -148,9 +98,9 @@
 		            \textbf{Microsoft Support} & \textbf{Education At Work} & \textbf{Jan 2018 -- Feb 2020} \\
 	            \end{tabu}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Resolved Office Suite technical issues, providing exceptional customer support that boosted customer satisfaction and resulted in positive feedback and high ratings.}
+		            \item{Troubleshot and resolved Office Suite technical issues for 100+ clients in a timely and professional manner, boosting customer satisfaction ratings by 20\%.}
 		            \item{Outperformed competing support sites by delivering efficient and effective solutions, enhancing customer retention and loyalty to the organization.}
-		            \item{Collaborated with colleagues using OneNote and articles, reducing response time and enhancing first-contact resolution, contributing to a seamless customer support experience.}
+		            \item{Collaborated with colleagues using articles, reducing response time and enhancing first-contact resolution, helping 2x as many customers and doubling productivity.}
 	            \end{itemize}
 	      }
 
@@ -161,7 +111,7 @@
 \section{\textbf{Technical Skills}}
 \begin{itemize}[leftmargin=0.05in, label={}]
 	{\item{
-		            \textbf{Languages}{: PHP, C\#, Java, C, C++, Python, MySQL,  JavaScript, HTML, CSS} \\
+		            \textbf{Languages}{: PHP, C\#, Java, C, C++, Python, MySQL, SQL, JavaScript, HTML, CSS} \\
 		            \textbf{Frameworks And Libraries}{: .NET Core, ASP.NET Core, React.js, FastAPI} \\
 		            \textbf{Developer Tools}{: Git, GitHub , Azure, Postman, AWS(EC2), Docker, Linux, Jira, CI/CD} \\
 		      }}
@@ -175,8 +125,8 @@
 	\item{
 	            \textbf{Personal Porfolio Website}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Built a React app to showcase my overall work experience, projects, and skills.}
-		            \item {Deployed on Netlify using CI/CD to automate the deployment process and make it publicly accessible.}
+		            \item{Coded a React app to showcase overall work experience, projects, and skills.}
+		            \item {Deployed on Netlify using CI/CD to automate the deployment process and making the app publicly accessible.}
 	            \end{itemize}
 	      }
 	\item{
@@ -188,9 +138,9 @@
 	\item{
 	            \textbf{U-Dash: Remote Campus Delivery Vehicle}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Designed and built a campus vehicle using Raspberry Pi, Python, and C to provide efficient remote deliveries}
-		            \item {Implemented a REST API with FastAPI to establish  communication between the vehicle and web application}
-		                  \item{Built and deployed a ReactJS web application, enabling communication between the user and vehicle.}
+		            \item{Devised a campus vehicle using Raspberry Pi, Python, and C to provide efficient remote deliveries.}
+		            \item {Implemented a REST API with FastAPI to establish  communication between the vehicle and web application.}
+		            \item{Built and deployed a ReactJS web application, enabling communication between the user and vehicle.}
 
 	            \end{itemize}
 	      }
@@ -198,14 +148,13 @@
 	            \textbf{Research Opportunity Web Platform}
 	            \begin{itemize} [label=$\bullet$]
 		            \item{Created an MVC web app using HTML5, CSS3, C\#, and MySQL to connect students with research opportunities.}
-		            \item{Designed a user-friendly interface using Bootstrap, optimizing UX and increasing engagement with opportunities.}
 		            \item{Implemented a RESTful API with ASP.NET Core, enabling data transfer between the app and MySQL database.}
 	            \end{itemize}
 	      }
 	\item{
 	            \textbf{FFMPEG: Innovative Audio Codec}
 	            \begin{itemize} [label=$\bullet$]
-		            \item{Developed an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format.}
+		            \item{Engineered an ASIF codec in C for FFMPEG, streamlining encoding/decoding of audio data in ASIF format.}
 	            \end{itemize}
 	      }
 
@@ -224,7 +173,7 @@
 
 	            \begin{itemize} [label=$\bullet$]
 		            \item{Bachelor of Science in Computer Engineering - 3.7 GPA}
-		            \item{Relevant Courses{: Object-Oriented Programming, Data Structures \& Algorithm, Web Software Architecture, Computer Systems, Software Practice I \& II, Database Systems, Computer Network} }
+		            \item{Relevant Courses{: Object-Oriented Programming, Data Structures \& Algorithm, Web Software Architecture, Computer Systems, Software Practice 1 \& 2, Database Systems, Computer Network} }
 	            \end{itemize}
 	      }
 \end{itemize}
