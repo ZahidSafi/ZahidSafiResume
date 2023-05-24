@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  24 MAY 2023 06:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  24 MAY 2023 09:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**c:/Users/zahid/VSCodeProjects/ZahidSafiResume/ZahidSafiResume
-(c:/Users/zahid/VSCodeProjects/ZahidSafiResume/ZahidSafiResume.tex
+**c:/Users/zahid/VSCodeProjects/ZahidSafiResume/Zahid_Safi_Resume
+(c:/Users/zahid/VSCodeProjects/ZahidSafiResume/Zahid_Safi_Resume.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-11> (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -489,8 +489,8 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
 \l__pdf_internal_box=\box63
-) (./ZahidSafiResume.aux)
-\openout1 = `ZahidSafiResume.aux'.
+) (./Zahid_Safi_Resume.aux)
+\openout1 = `Zahid_Safi_Resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 56.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line 56.
@@ -549,9 +549,9 @@ LaTeX Info: Command `\ddddot' is already robust on input line 56.
 \everyMPtoPDFconversion=\toks38
 )
 Package hyperref Info: Link coloring OFF on input line 56.
- (./ZahidSafiResume.out) (./ZahidSafiResume.out)
+ (./Zahid_Safi_Resume.out) (./Zahid_Safi_Resume.out)
 \@outlinefile=\write3
-\openout3 = `ZahidSafiResume.out'.
+\openout3 = `Zahid_Safi_Resume.out'.
 
 
 *geometry* driver: auto-detecting
@@ -657,30 +657,30 @@ Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/ntxtlf/b/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--118
+Underfull \hbox (badness 10000) in paragraph at lines 124--128
 
  []
 
 [1
 
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}] (./ZahidSafiResume.aux)
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}] (./Zahid_Safi_Resume.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.5pt have occurred.
 
-Package rerunfilecheck Info: File `ZahidSafiResume.out' has not changed.
+Package rerunfilecheck Info: File `Zahid_Safi_Resume.out' has not changed.
 (rerunfilecheck)             Checksum: 03E5922A74CA971F756DC7EAB9E2FA34;390.
  ) 
 Here is how much of TeX's memory you used:
- 16979 strings out of 476047
- 258115 string characters out of 5794047
+ 16983 strings out of 476047
+ 258229 string characters out of 5794047
  1880993 words of memory out of 5000000
  37065 multiletter control sequences out of 15000+600000
- 551555 words of font info for 158 fonts, out of 8000000 for 9000
+ 551796 words of font info for 161 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,76p,1246b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,76p,1248b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on ZahidSafiResume.pdf (1 page, 98201 bytes).
+Output written on Zahid_Safi_Resume.pdf (1 page, 96195 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
