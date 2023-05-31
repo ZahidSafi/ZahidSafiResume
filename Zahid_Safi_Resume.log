@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  24 MAY 2023 09:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  24 MAY 2023 16:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -672,15 +672,15 @@ Package rerunfilecheck Info: File `Zahid_Safi_Resume.out' has not changed.
 (rerunfilecheck)             Checksum: 03E5922A74CA971F756DC7EAB9E2FA34;390.
  ) 
 Here is how much of TeX's memory you used:
- 16983 strings out of 476047
- 258229 string characters out of 5794047
+ 16979 strings out of 476047
+ 258153 string characters out of 5794047
  1880993 words of memory out of 5000000
  37065 multiletter control sequences out of 15000+600000
- 551796 words of font info for 161 fonts, out of 8000000 for 9000
+ 551555 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,76p,1248b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Zahid_Safi_Resume.pdf (1 page, 96195 bytes).
+Output written on Zahid_Safi_Resume.pdf (1 page, 96224 bytes).
 PDF statistics:
  53 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
