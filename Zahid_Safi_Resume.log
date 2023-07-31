@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  30 JUL 2023 22:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  30 JUL 2023 23:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -611,8 +611,6 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 60.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 24.88pt on input line 60.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 61.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 61.
  (c:/texlive/2023/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
@@ -658,12 +656,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 80--83
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
-\OT1/ntxtlf/m/n/12 (+20) CAS.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 96--99
+Underfull \hbox (badness 10000) in paragraph at lines 97--99
 
  []
 
@@ -674,18 +667,18 @@ Package rerunfilecheck Info: File `Zahid_Safi_Resume.out' has not changed.
 (rerunfilecheck)             Checksum: C558F42F2A6EFCE0E768A9D9E972ED65;181.
  ) 
 Here is how much of TeX's memory you used:
- 16965 strings out of 476047
- 257912 string characters out of 5794047
- 1867993 words of memory out of 5000000
- 37062 multiletter control sequences out of 15000+600000
- 551218 words of font info for 151 fonts, out of 8000000 for 9000
+ 16884 strings out of 476047
+ 256359 string characters out of 5794047
+ 1868993 words of memory out of 5000000
+ 37005 multiletter control sequences out of 15000+600000
+ 536078 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,76p,1248b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Zahid_Safi_Resume.pdf (1 page, 94181 bytes).
+Output written on Zahid_Safi_Resume.pdf (1 page, 94538 bytes).
 PDF statistics:
  45 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
  4 named destinations out of 1000 (max. 500000)
- 33809 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 26129 words of extra memory for PDF output out of 29859 (max. 10000000)
 
