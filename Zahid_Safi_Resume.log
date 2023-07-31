@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  18 JUN 2023 00:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.5.13)  30 JUL 2023 22:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -8,8 +8,8 @@ entering extended mode
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-05-11> (c:/texlive/2023/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-(c:/texlive/2023/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+(c:/texlive/2023/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count185
 \c@section=\count186
@@ -484,7 +484,7 @@ LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input line
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.95pt on input line 56.
+(Font)              scaled to size 12.0pt on input line 56.
  (c:/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count305
@@ -562,23 +562,23 @@ Package hyperref Info: Link coloring OFF on input line 56.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(54.2025pt, 505.89pt, 54.2025pt)
-* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=505.89pt
-* \textheight=722.7pt
-* \oddsidemargin=-18.06749pt
-* \evensidemargin=-18.06749pt
-* \topmargin=-36.135pt
+* \textwidth=469.75502pt
+* \textheight=650.43001pt
+* \oddsidemargin=0.0pt
+* \evensidemargin=0.0pt
+* \topmargin=0.0pt
 * \headheight=0.0pt
 * \headsep=0.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=0.0pt
-* \marginparwidth=59.0pt
+* \marginparwidth=44.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -608,11 +608,11 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.95pt on input line 60.
+(Font)              scaled to size 12.0pt on input line 60.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 24.88pt on input line 60.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 61.
+(Font)              scaled to size 10.95pt on input line 61.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 61.
  (c:/texlive/2023/texmf-dist/tex/latex/newtx/ot1minntx.fd
 File: ot1minntx.fd 2022/01/20 v1.0 font definition file for OT1/minntx
@@ -625,12 +625,8 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 61.
  (c:/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-LaTeX Font Warning: Font shape `U/lasy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 61.
-
 LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 61.
-(c:/texlive/2023/texmf-dist/tex/latex/newtx/untxmia.fd
+ (c:/texlive/2023/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
 LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 61.
@@ -642,54 +638,54 @@ LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 6
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.95pt on input line 68.
-Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/ntxtlf/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
 (Font)              scaled to size 12.0pt on input line 68.
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/ntxtlf/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Font shape `OT1/ntxtlf/b/sc' will be
-(Font)              scaled to size 12.0pt on input line 68.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/sc' will be
+(Font)              scaled to size 14.4pt on input line 68.
 Package microtype Info: Character `013' is missing
-(microtype)             in font `OT1/ntxtlf/b/sc/12'.
+(microtype)             in font `OT1/ntxtlf/m/sc/14.4'.
+(microtype)             Ignoring protrusion settings for this character.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/sc' will be
+(Font)              scaled to size 14.4pt on input line 68.
+Package microtype Info: Character `013' is missing
+(microtype)             in font `OT1/ntxtlf/b/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--128
+Underfull \hbox (badness 10000) in paragraph at lines 80--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
+\OT1/ntxtlf/m/n/12 (+20) CAS.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 96--99
 
  []
 
 [1
 
 {c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{c:/texlive/2023/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf-pc.enc}] (./Zahid_Safi_Resume.aux)
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.5pt have occurred.
-
-
-Package rerunfilecheck Warning: File `Zahid_Safi_Resume.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Zahid_Safi_Resume.out':
-(rerunfilecheck)             Before: 41A2CE89E2B8F8ABAC06B50EFDA4EE93;337
-(rerunfilecheck)             After:  03E5922A74CA971F756DC7EAB9E2FA34;390.
+Package rerunfilecheck Info: File `Zahid_Safi_Resume.out' has not changed.
+(rerunfilecheck)             Checksum: C558F42F2A6EFCE0E768A9D9E972ED65;181.
  ) 
 Here is how much of TeX's memory you used:
- 16979 strings out of 476047
- 258153 string characters out of 5794047
- 1880993 words of memory out of 5000000
- 37065 multiletter control sequences out of 15000+600000
- 551555 words of font info for 158 fonts, out of 8000000 for 9000
+ 16965 strings out of 476047
+ 257912 string characters out of 5794047
+ 1867993 words of memory out of 5000000
+ 37062 multiletter control sequences out of 15000+600000
+ 551218 words of font info for 151 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,13n,76p,1248b,536s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmb.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Zahid_Safi_Resume.pdf (1 page, 96215 bytes).
+Output written on Zahid_Safi_Resume.pdf (1 page, 94181 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
- 33825 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 45 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
+ 4 named destinations out of 1000 (max. 500000)
+ 33809 words of extra memory for PDF output out of 35830 (max. 10000000)
 
